@@ -3,6 +3,7 @@ const app = new AppExpress();
 
 import authMiddleware from './middleware/auth';
 
+app.middleware(authMiddleware);
 const getRoutes = (request, response) => {
   response.json({routes:['/','/user/:username','user']});
 };
