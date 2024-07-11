@@ -14,7 +14,8 @@ const fetchMusicList = async () => {
 
 const getRoutes = async (request, response) => {
   const music = await fetchMusicList();
-  response.json(music.list);
+  return response.json(music.list);
+  
 };
 
 app.get('/', getRoutes);
