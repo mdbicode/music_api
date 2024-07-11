@@ -3,9 +3,9 @@ import AppExpress from '@itznotabug/appexpress';
 const app = new AppExpress();
 
 const list = [
-    { name: 'Drunktext' },
-    { name: 'Dandelions' },
-    { name: 'Love Yourself' }
+    { name: 'Drunktext', artist :'Henry Moodie' },
+    { name: 'Dandelions', artist :'Ruth B' },
+    { name: 'Love Yourself', artist :'Justin Bieber' }
 ];
 
 const fetchMusicList = async () => {
